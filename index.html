@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click - Agencia de Marketing Digital</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #2D2E83; }
+        .bg-gradient-click { background: linear-gradient(135deg, #FF4E50 0%, #F9D423 100%); }
+        .text-gradient-click { background: linear-gradient(135deg, #FF4E50 0%, #F9D423 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="text-white min-h-screen flex flex-col justify-between">
+
+    <nav class="bg-[#662483] p-4 shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2 font-bold text-2xl tracking-wider">
+                <svg class="w-8 h-8" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="clickGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#FF4E50" />
+                            <stop offset="100%" stop-color="#F9D423" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M40 80 L35 45 L70 55 Z" fill="url(#clickGrad)"/>
+                    <path d="M30 30 L25 20 M45 25 L45 12 M62 32 L70 22 M22 45 L10 45" stroke="url(#clickGrad)" stroke-width="6" stroke-linecap="round"/>
+                </svg>
+                <span>AGENCIA <span class="text-gradient-click">CLICK</span></span>
+            </div>
+            <div class="hidden md:flex gap-6 font-semibold">
+                <a href="#inicio" class="hover:text-[#F9D423] transition">Inicio</a>
+                <a href="#servicios" class="hover:text-[#F9D423] transition">Servicios</a>
+                <a href="#contacto" class="hover:text-[#F9D423] transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="max-w-6xl mx-auto px-4 py-20 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-10">
+        <div class="md:w-1/2">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Hacemos que tu negocio haga <br><span class="text-gradient-click">CLICK</span> con el mundo
+            </h1>
+            <p class="text-lg text-gray-300 mb-8">
+                Estrategias de marketing digital de alto impacto. Elevamos tus ventas con campañas inteligentes de tráfico pago, diseño web optimizado y SEO.
+            </p>
+            <a href="#contacto" class="bg-gradient-click text-gray-900 font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:scale-105 transition inline-block">
+                Agenda una Asesoría Gratis
+            </a>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <div class="w-64 h-64 bg-[#552883] rounded-full flex items-center justify-center p-8 border-4 border-[#432C83] shadow-2xl relative animate-pulse">
+                <svg class="w-40 h-40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40 80 L35 45 L70 55 Z" fill="url(#clickGrad)"/>
+                    <path d="M30 30 L25 20 M45 25 L45 12 M62 32 L70 22 M22 45 L10 45" stroke="url(#clickGrad)" stroke-width="6" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <section id="servicios" class="bg-[#552883] py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Nuestros Servicios de Impacto</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#432C83] p-8 rounded-2xl shadow-xl hover:-translate-y-2 transition duration-300 border border-[#662483]">
+                    <div class="text-3xl mb-4">🚀</div>
+                    <h3 class="text-xl font-bold mb-2">Tráfico Pago (Ads)</h3>
+                    <p class="text-gray-300">Campañas optimizadas en Meta Ads y Google Ads para traer clientes listos para comprar.</p>
+                </div>
+                <div class="bg-[#432C83] p-8 rounded-2xl shadow-xl hover:-translate-y-2 transition duration-300 border border-[#662483]">
+                    <div class="text-3xl mb-4">💻</div>
+                    <h3 class="text-xl font-bold mb-2">Diseño Web Premium</h3>
+                    <p class="text-gray-300">Páginas web veloces, atractivas y enfocadas 100% en convertir visitantes en ventas.</p>
+                </div>
+                <div class="bg-[#432C83] p-8 rounded-2xl shadow-xl hover:-translate-y-2 transition duration-300 border border-[#662483]">
+                    <div class="text-3xl mb-4">📈</div>
+                    <h3 class="text-xl font-bold mb-2">Estrategia SEO</h3>
+                    <p class="text-gray-300">Posicionamos tu marca en los primeros lugares de Google de forma orgánica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="max-w-3xl mx-auto px-4 py-20 w-full">
+        <div class="bg-[#432C83] p-8 md:p-10 rounded-3xl shadow-2xl border border-[#662483]">
+            <h2 class="text-3xl font-bold text-center mb-2">¿Listo para dar el gran paso?</h2>
+            <p class="text-center text-gray-300 mb-8">Déjanos tus datos y un especialista de Click te contactará hoy mismo.</p>
+            
+            <form id="contactForm" class="space-y-6">
+                <div>
+                    <label class="block mb-2 font-semibold">Nombre Completo</label>
+                    <input type="text" required class="w-full p-4 rounded-xl bg-[#2D2E83] border border-[#662483] text-white focus:outline-none focus:border-[#F9D423]">
+                </div>
+                <div>
+                    <label class="block mb-2 font-semibold">Correo Electrónico</label>
+                    <input type="email" required class="w-full p-4 rounded-xl bg-[#2D2E83] border border-[#662483] text-white focus:outline-none focus:border-[#F9D423]">
+                </div>
+                <div>
+                    <label class="block mb-2 font-semibold">Mensaje o Negocio</label>
+                    <textarea required rows="4" class="w-full p-4 rounded-xl bg-[#2D2E83] border border-[#662483] text-white focus:outline-none focus:border-[#F9D423]"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-click text-gray-900 font-bold p-4 rounded-xl shadow-lg hover:opacity-90 transition text-lg">
+                    Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-[#1C1D4F] py-6 text-center text-gray-400 text-sm border-t border-[#432C83]">
+        <p>&copy; 2026 Agencia Click. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Hiciste Click! 🎉 Mensaje enviado con éxito. Un asesor te contactará en breve.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
